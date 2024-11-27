@@ -28,7 +28,7 @@ void loop() {
     int sensorValue = analogRead(A0);     // Read the microphone output
     Serial.println(sensorValue);     // Print the value to Serial Monitor
 
-    // Use switch-case to classify snoring
+    //Classify snoring
     switch (sensorValue) {
       case 550 ... 599:
         Serial.println("Soft snoring detected (light snoring).");
